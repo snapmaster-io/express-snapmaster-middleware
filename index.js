@@ -4,7 +4,7 @@ const YAML = require('yaml');
 
 // if the /metadata endpoint was requested, return the 
 // parsed 'actions.yml' definition file as a JSON payload
-exports.snapmaster = (req, res, next) => {
+module.exports = (req, res, next) => {
   if (req.path === '/__metadata') {
     const provider = getDefinition();
     res.status(200).send(provider);
