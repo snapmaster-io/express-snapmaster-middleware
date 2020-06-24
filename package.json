@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/snapmaster-io/snapmaster-actions#readme",
   "dependencies": {
+    "fs": "0.0.1-security",
     "yaml": "^1.10.0"
   }
 }
