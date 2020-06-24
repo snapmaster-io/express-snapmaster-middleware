@@ -1,23 +1,22 @@
 {
-  "name": "snapmaster-actions",
+  "name": "express-snapmaster",
   "version": "0.1.6",
-  "description": "SnapMaster Actions express middleware",
+  "description": "Express middleware for SnapMaster Actions",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snapmaster-io/snapmaster-actions.git"
+    "url": "git+https://github.com/snapmaster-io/express-snapmaster.git"
   },
   "author": "Omri Gazitt <ogazitt@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/snapmaster-io/snapmaster-actions/issues"
+    "url": "https://github.com/snapmaster-io/express-snapmaster/issues"
   },
-  "homepage": "https://github.com/snapmaster-io/snapmaster-actions#readme",
+  "homepage": "https://github.com/snapmaster-io/express-snapmaster#readme",
   "dependencies": {
-    "fs": "0.0.1-security",
     "yaml": "^1.10.0"
   }
 }
