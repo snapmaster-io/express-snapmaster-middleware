@@ -28,10 +28,10 @@ const { snapmaster } = require('snapmaster-actions');
 const app = express();
 app.use(bodyParser.json());
 
-// enable the snapmaster middleware for all requests
+// enable the snapmaster middleware for ALL requests
 app.use(snapmaster);
 
-// include the 'snapmaster' middleware in the express route
+// ...OR, include the 'snapmaster' middleware in the express route
 app.use('/send', snapmaster, (req, res) => {
   res.status(200).send({ message: success });
 });
