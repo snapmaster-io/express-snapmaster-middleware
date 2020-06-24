@@ -1,0 +1,19 @@
+{
+  "name": "snapmaster-actions",
+  "version": "0.1.0",
+  "description": "SnapMaster Actions express middleware",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/snapmaster-io/snapmaster-actions.git"
+  },
+  "author": "Omri Gazitt <ogazitt@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/snapmaster-io/snapmaster-actions/issues"
+  },
+  "homepage": "https://github.com/snapmaster-io/snapmaster-actions#readme"
+}
