@@ -1,4 +1,6 @@
 // snapmaster middleware 
+const fs = require('fs');
+const YAML = require('yaml');
 
 // if the /metadata endpoint was requested, return the 
 // parsed 'actions.yml' definition file as a JSON payload

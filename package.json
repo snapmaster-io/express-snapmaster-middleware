@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/snapmaster-io/snapmaster-actions/issues"
   },
-  "homepage": "https://github.com/snapmaster-io/snapmaster-actions#readme"
+  "homepage": "https://github.com/snapmaster-io/snapmaster-actions#readme",
+  "dependencies": {
+    "yaml": "^1.10.0"
+  }
 }
