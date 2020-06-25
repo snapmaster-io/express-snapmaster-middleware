@@ -18,12 +18,17 @@ The middleware processes the `/__metadata` endpoint request and returns
 a JSON representation of the parsed `actions.yml` file that defines the 
 actions supported by the SnapMaster action provider.
 
+Note that this middlware is used by the more turnkey package 
+[express-snapmaster](https://github.com/snapmaster-io/express-snapmaster).
+Users that don't require control over the Express server can just use 
+the above package.
+
 ## Usage
 
 ```
 const express = require('express');
 const bodyParser = require('body-parser');
-const { snapmaster } = require('snapmaster-actions');
+const snapmaster = require('snapmaster-express-middleware');
 
 const app = express();
 app.use(bodyParser.json());
@@ -36,8 +41,4 @@ app.use('/send', snapmaster, (req, res) => {
   res.status(200).send({ message: success });
 });
 ```
-
-## Running locally
-
-`node index.js` in the root directory of this project will run an HTTP server on localhost:5555.
 

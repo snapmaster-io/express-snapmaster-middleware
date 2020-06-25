@@ -1,5 +1,5 @@
 {
-  "name": "express-snapmaster",
+  "name": "express-snapmaster-middleware",
   "version": "0.1.8",
   "description": "Express middleware for SnapMaster Actions",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/snapmaster-io/express-snapmaster.git"
+    "url": "git+https://github.com/snapmaster-io/express-snapmaster-middleware.git"
   },
   "author": "Omri Gazitt <ogazitt@gmail.com>",
   "license": "Apache-2.0",
   "bugs": {
-    "url": "https://github.com/snapmaster-io/express-snapmaster/issues"
+    "url": "https://github.com/snapmaster-io/express-snapmaster-middleware/issues"
   },
-  "homepage": "https://github.com/snapmaster-io/express-snapmaster#readme",
+  "homepage": "https://github.com/snapmaster-io/express-snapmaster-middleware#readme",
   "dependencies": {
     "yaml": "^1.10.0"
   }
