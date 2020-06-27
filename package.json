@@ -1,6 +1,6 @@
 {
   "name": "express-snapmaster-middleware",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "description": "Express middleware for SnapMaster Actions",
   "main": "index.js",
   "scripts": {
