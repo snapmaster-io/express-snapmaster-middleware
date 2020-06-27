@@ -6,18 +6,19 @@ const YAML = require('yaml');
 // parsed 'actions.yml' definition file as a JSON payload
 module.exports = (req, res, next) => {
   if (req.path === '/__metadata') {
-    const provider = getDefinition();
+    const provider = getDefinition(req);
     res.status(200).send(provider);
   } else {
     next();
   }
 }
 
-const getDefinition = () => {
+const getDefinition = (req) => {
   try {
     const definition = fs.readFileSync(`./actions.yml`, 'utf8');
     const provider = YAML.parse(definition);
     provider.text = definition;
+    provider.url = req.url.replace('/__metadata', '');
     // TODO: validation
     return provider;
   } catch (error) {
