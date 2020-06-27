@@ -18,7 +18,7 @@ const getDefinition = (req) => {
     const definition = fs.readFileSync(`./actions.yml`, 'utf8');
     const provider = YAML.parse(definition);
     provider.text = definition;
-    provider.url = req.url.replace('/__metadata', '');
+    provider.url = req.protocol + '://' + req.get('host');
     // TODO: validation
     return provider;
   } catch (error) {
