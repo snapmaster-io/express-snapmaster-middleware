@@ -61,7 +61,7 @@ const checkParams = (req) => {
 
   for (const param of def.parameters) {
     if (param.required && !req.body[param.name]) {
-      return `express-snapmaster-middleware: required parameter ${param.name} for ${action} not found`;
+      return `express-snapmaster-middleware: required parameter '${param.name}' for action '${action}' not found in request body`;
     }
   }
 
