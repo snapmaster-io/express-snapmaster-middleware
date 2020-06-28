@@ -2,7 +2,7 @@
 const fs = require('fs');
 const YAML = require('yaml');
 
-let definition = getDefinition();
+let definition;
 
 // if the /metadata endpoint was requested, return the 
 // parsed 'actions.yml' definition file as a JSON payload
