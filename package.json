@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/snapmaster-io/express-snapmaster-middleware#readme",
   "dependencies": {
-    "yaml": "^1.10.0"
+    "yaml": "^2.2.2"
   }
 }
